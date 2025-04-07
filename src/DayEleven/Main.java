@@ -18,6 +18,29 @@ public class Main {
 
      */
     public static void main(String[] args) {
+        Library library = new Library();
+
+        //Add books and members
+        Book book1 = new Book("The Hobbit", "J R.R. Tolkien");
+        Book book2 = new Book("1984", "George Orwell");
+        Member member1 = new Member("James", "M001");
+
+        library.addBook(book1);
+        library.addBook(book2);
+        library.addMember(member1);
+
+
+        // Display initial state
+        System.out.println("Books in library:");
+        library.displayBooks();
+
+        //Lend a book
+        System.out.println("\nLending a book:");
+        library.lendBook("The Hobbit", "M001");
+
+        // Display updated state
+        System.out.println("\nBooks in library after lending:");
+        library.displayBooks();
 
     }
 }

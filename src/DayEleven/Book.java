@@ -8,7 +8,7 @@ public class Book {
     private boolean isAvailable;
 
 
-    private Book(String title, String author) {
+    public Book(String title, String author) {
         this.title = title;
         this.author = author;
         this.isAvailable = true; // simple initialization (KISS)
