@@ -22,8 +22,11 @@ public class Main {
 
         Circle drawingcircle = new Circle(6);
         drawingcircle.draw();
-        drawingcircle.calculateArea();
         drawingcircle.displayArea();
+
+        Rectangle drawingrectangle = new Rectangle(6, 6);
+        drawingrectangle.draw();
+        drawingrectangle.displayArea();
 
     }
 }
