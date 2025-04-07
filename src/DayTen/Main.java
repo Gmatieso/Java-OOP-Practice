@@ -28,5 +28,9 @@ public class Main {
         drawingrectangle.draw();
         drawingrectangle.displayArea();
 
+        Triangle calculate_area_of_a_triangle = new Triangle(6, 6);
+        calculate_area_of_a_triangle.calculateArea();
+        calculate_area_of_a_triangle.displayArea();
+
     }
 }
