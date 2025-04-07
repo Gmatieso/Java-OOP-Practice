@@ -32,5 +32,25 @@ public class Main {
         calculate_area_of_a_triangle.calculateArea();
         calculate_area_of_a_triangle.displayArea();
 
+
+        // Create shapes using the factory
+        Shape circle = ShapeFactory.createShape("Circle", 5.0);
+        Shape rectangle = ShapeFactory.createShape("Rectangle", 4.0, 6.0);
+        Shape triangle = ShapeFactory.createShape("Triangle", 3.0, 4.0);
+
+        // Process shapes
+        ShapeProcessor circleProcessor = new ShapeProcessor(circle);
+        ShapeProcessor rectangleProcessor = new ShapeProcessor(rectangle);
+        ShapeProcessor triangleProcessor = new ShapeProcessor(triangle);
+
+        System.out.println("Processing Circle");
+        circleProcessor.process();
+
+        System.out.println("\nProcessing Rectangle:");
+        rectangleProcessor.process();
+
+        System.out.println("\nProcessing Triangle:");
+        triangleProcessor.process();
+
     }
 }
