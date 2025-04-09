@@ -45,12 +45,12 @@ public class MethodOveridingDemo {
 
         emp.empName = "John Smith"; // Valid
 //        emp.dept = 101; invalid
-        System.out.println("Employee salary"   + " " + emp.calculateSalary()); // called from FullTimeEmployee(child class)
+        System.out.println("Employee salary FullTime"   + " " + emp.calculateSalary()); // called from FullTimeEmployee(child class)
 
 
         //lets create another object for child class reference variable parent class
         Employee emp2 = new PartTimeEmployee();
-        System.out.println("Employee salary"   + " " + emp2.calculateSalary());  // called from PartTimeEmployee(child class)
+        System.out.println("Employee salary PartTime"   + " " + emp2.calculateSalary());  // called from PartTimeEmployee(child class)
 
     }
 }
