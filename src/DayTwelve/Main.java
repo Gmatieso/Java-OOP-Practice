@@ -4,7 +4,7 @@ package DayTwelve;
     * In Java a collection represent a group of objects. often referred to as elements.
     * Collection provides a way to store, manipulate, and retrieve data. in a more organized manner.
     * Java can always store objects
-    * Primary purpoe of collection is to store data. i.e object type of data.
+    * Primary purpose of collection is to store data. i.e object type of data.
     * If we want to store primitive data. we use array .
     * Collection can be Interfaces or Classes.
     *
