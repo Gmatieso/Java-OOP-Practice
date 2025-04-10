@@ -20,35 +20,35 @@ public class TypeCastingDemo {
 
         //WideningExample (Lower to Higher)
         // byte -> short -> int -> Long -> Float -> double
-//        byte b = 127;
-//        short s = b;   // Automatic type conversion from byte to short
-//        int i = s;
-//        long l = i;
-//        float f = l;
-//        double d = f;
-//
-//        System.out.println("Byte value:" + b);
-//        System.out.println("Short value:" + s);
-//        System.out.println("Integer value:" + i);
-//        System.out.println("Long value:" + l);
-//        System.out.println("Float value:" + f);
-//        System.out.println("Double value:" + d);
+        byte b = 127;
+        short s = b;   // Automatic type conversion from byte to short
+        int i = s;
+        long l = i;
+        float f = l;
+        double d = f;
+
+        System.out.println("Byte value:" + b);
+        System.out.println("Short value:" + s);
+        System.out.println("Integer value:" + i);
+        System.out.println("Long value:" + l);
+        System.out.println("Float value:" + f);
+        System.out.println("Double value:" + d);
 
         //! NarrowingExample (Higher to Lower)
         //! double -> float -> long -> int -> short -> byte
-        double d = 9.1234564;
+        double dc = 9.1234564;
         float df = (float) d;
-        long l = (long) d;
-        int i = (int) l;
-        short s = (short) i;
-        byte b = (byte) s;
+        long ld = (long) d;
+        int ic = (int) l;
+        short sc = (short) i;
+        byte bc = (byte) s;
 
-        System.out.println("Double value : " + d);
+        System.out.println("Double value : " + dc);
         System.out.println("Float value: " + df);
-        System.out.println("Long value: " + l);
-        System.out.println("Integer value: " + i);
-        System.out.println("Short value: " + s);
-        System.out.println("Byte value: " + b);
+        System.out.println("Long value: " + ld);
+        System.out.println("Integer value: " + ic);
+        System.out.println("Short value: " + sc);
+        System.out.println("Byte value: " + bc);
 
 
     }
