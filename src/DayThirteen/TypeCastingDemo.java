@@ -10,8 +10,8 @@ package DayThirteen;
 // *Examples: byte to short, int to long, float to double.
 // ! Narrowing Type Casting (Explicit Type Conversion)
 // * larger data type to lower / smaller
-// * done manuallly
-// *Data is lost during conversion.
+// * done manually
+// * Data is lost during conversion.
 // * follows the order double -> float -> long -> int -> short => byte.
 //
 
@@ -37,11 +37,15 @@ public class TypeCastingDemo {
         //! NarrowingExample (Higher to Lower)
         //! double -> float -> long -> int -> short -> byte
         double dc = 9.1234564;
-        float df = (float) d;
+        float df = (float) dc;
         long ld = (long) d;
         int ic = (int) l;
         short sc = (short) i;
         byte bc = (byte) s;
+
+        int q = 257;
+        byte z = (byte) q;
+        System.out.println("Printing conversion of value to Byte: " + z);
 
         System.out.println("Double value : " + dc);
         System.out.println("Float value: " + df);
