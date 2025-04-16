@@ -16,9 +16,7 @@ package DayFifteen;
         HashMap maintains no order.
  */
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 public class HashMapDemo {
     public static void main(String[] args) {
