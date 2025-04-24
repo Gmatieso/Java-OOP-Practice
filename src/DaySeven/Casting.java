@@ -34,9 +34,9 @@ public class Casting {
         car.Start();
         car.run();  //Override method can access from Child class Bcoz object is created for Child class
 
-        // Down casting - indirect/explicite
 
 
+        // Down casting - indirect/explicit
         Vehicle v = new Car();
 
         //Down casting
@@ -45,5 +45,6 @@ public class Casting {
         System.out.println(c.model);
         c.Start();
         c.Stop();
+
     }
 }

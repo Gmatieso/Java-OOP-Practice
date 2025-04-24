@@ -12,9 +12,18 @@ public class CallByValue {
         System.out.println("Hey TEch g... you guys know each other for : " + x + "Years. Happy Annvesery");
     }
 
+    public void display(){
+        System.out.println("My values is"  + x);
+    }
+
     public static void main(String[] args) {
         CallByValue obj = new CallByValue();
-//        obj.addition( 5);
+
+        obj.x = 5;
+        obj.display();
+        obj.addition( 5);
+        obj.addition(obj.x);
+
         obj.addition(obj.x);
 
         obj.addition(obj.x);
