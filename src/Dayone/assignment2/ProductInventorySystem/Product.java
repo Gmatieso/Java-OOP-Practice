@@ -7,10 +7,6 @@ public class Product {
     double price;
     int stock;
 
-    Product(){
-
-    }
-
     Product(String productName, double price, int stock) {
         this.productName = productName;
         this.price = price;

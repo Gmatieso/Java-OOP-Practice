@@ -6,10 +6,6 @@ public class Appointment {
     String name;
 
 
-    Appointment(){
-
-    }
-
     Appointment(String description, String date, String name){
         this.description = description;
         this.date = date;

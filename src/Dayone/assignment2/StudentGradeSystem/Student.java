@@ -1,13 +1,9 @@
 package Dayone.assignment2.StudentGradeSystem;
 
-import Dayone.assignment2.LibraryManagementSystem.Book;
-
 public class Student {
 
     String name;
     int [] grades;
-
-    Student(){}
 
     // A parameterized constructor to initialize name and grades
     Student(String name, int [] grades) {
@@ -37,7 +33,7 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student student = new Student("John", new int[] {2,4,6});
+        Student student = new Student("John", new int[] {2,4,6,8,4});
         student.printStudentDetails();
 
     }
