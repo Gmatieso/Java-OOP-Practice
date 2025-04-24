@@ -1,11 +1,24 @@
 package Dayone.assignment;
 
 public class BankAccount {
-    // attributes and methods
+    // instant variable and methods
 
     int accountNumber;
     String accountHolderName;
     float accountBalance ;
+
+
+    void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    void setAccountHolderName(String accountHolderName) {
+        this.accountHolderName = accountHolderName;
+    }
+
+    void setAccountBalance(float accountBalance) {
+        this.accountBalance = accountBalance;
+    }
 
 
     void deposit(float amount) {
@@ -26,7 +39,7 @@ public class BankAccount {
         } else if (amount > accountBalance) {
             System.out.println("Insufficient funds to withdraw in your account");
         } else {
-            System.out.println("Invalid withdrawal amount");
+            System.out.println("Invalid withdrawal amount:" + amount + " Enter a valid amount that ranges btwn 1 - 100");
         }
 
     }
@@ -43,13 +56,19 @@ public class BankAccount {
 
     public static void main(String[] args) {
         // object to perform deposit, withdrawal  and display
+        // here we are using/doing Reference variable i.e directly setting data from the object.
         BankAccount bankAccount = new BankAccount();
-        bankAccount.accountHolderName = "Rajesh";
-        bankAccount.accountNumber = 1036653;
+//        bankAccount.accountHolderName = "Rajesh";
+//        bankAccount.accountNumber = 1036653;
+        bankAccount.setAccountBalance(50000);
+        bankAccount.setAccountNumber(105190);
+        bankAccount.setAccountHolderName("Test Account");
+        bankAccount.displayInfo();
+
 
 
         bankAccount.deposit(150);
-        bankAccount.withdraw(50);
+        bankAccount.withdraw(200);
 
 
         bankAccount.checkBalance();

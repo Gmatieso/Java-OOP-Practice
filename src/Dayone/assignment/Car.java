@@ -1,10 +1,16 @@
 package Dayone.assignment;
 
 public class Car {
-    // Simple class with attributes and methods. i.e make, model and year
+    // Simple class with instance variables and methods. i.e make, model and year
     String make;
     String model;
     int year;
+
+    void setDetails(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
 
 
     //Constructor to initialize variables
@@ -23,11 +29,13 @@ public class Car {
 
 
         public static void main(String[] args) {
-            // Initialize
+            // Here we are using constructor to enter data into the object.
             Car car = new Car("MAZDA", "CX5", 2020);
+            // here we are using Reference variable to enter data into the object.
             car.make = "BMW";
             car.model = "Audi";
             car.year = 2020;
+            car.setDetails("CX5", "Mazda", 2020);
             car.displayInfo();
 
         }
