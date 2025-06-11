@@ -16,5 +16,21 @@ public class Main {
         MyThread2 myThread2 = new MyThread2();
         myThread2.start();
 
+        Thread threadStateExample = new Thread(new ThreadStateExample());
+
+        System.out.println("Thread state:" + threadStateExample.getState()); // NEW
+
+        threadStateExample.start();
+
+        System.out.println("Thread state:" + threadStateExample.getState()); // RUNABLE
+
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Thread state:" + threadStateExample.getState()); //TERMINATED
+
     }
 }
