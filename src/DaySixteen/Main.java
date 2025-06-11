@@ -13,5 +13,8 @@ public class Main {
             System.out.println("In main thread, count is:" +  count);
         }
 
+        MyThread2 myThread2 = new MyThread2();
+        myThread2.start();
+
     }
 }
