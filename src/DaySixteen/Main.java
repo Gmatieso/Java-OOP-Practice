@@ -5,7 +5,11 @@ public class Main {
         MyThread myThread = new MyThread();
         myThread.start();
 
-        for(int count = 1; count < 5; count ++){
+        MyRunnable myRunnable = new MyRunnable();
+        Thread thread = new Thread(myRunnable);
+        thread.start();
+
+        for(int count = 0; count < 5; count ++){
             System.out.println("In main thread, count is:" +  count);
         }
 
