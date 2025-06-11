@@ -32,11 +32,19 @@ public class Main {
 //
 //        System.out.println("Thread state:" + threadStateExample.getState()); //TERMINATED
 
-        Thread t0 = new Thread(new MyThreadPriority());
-        Thread t1 = new Thread(new MyThreadPriority());
-        t0.setPriority(Thread.MAX_PRIORITY);
-        t1.setPriority(Thread.MIN_PRIORITY);
-        t0.start();
-        t1.start();
+//        Thread t0 = new Thread(new MyThreadPriority());
+//        Thread t1 = new Thread(new MyThreadPriority());
+//        t0.setPriority(Thread.MAX_PRIORITY);
+//        t1.setPriority(Thread.MIN_PRIORITY);
+//        t0.start();
+//        t1.start();
+
+       Thread thread =  new Thread(new MyGivingThreadToOtherThreads());
+       thread.start();
+
+       for(int count = 0; count < 5; count ++){
+           System.out.println("Currently in main thread, count is:" + count);
+       }
+
    }
 }
