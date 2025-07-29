@@ -10,6 +10,7 @@ public class Main {
         groceryLine.add("Beth");
         groceryLine.add("Sam");
 
+
 //        System.out.println(groceryLine);
 //        groceryLine.remove("Beth");
 //        System.out.println(groceryLine);
